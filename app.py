@@ -23,6 +23,13 @@ def generate_prompt(prompt):
 
 def main():
     st.title("StreamChatify : Chat App 🗯️")
+    user_input = st.text_area("","Example prompts:""\n""1. Write a two number addition program in Golang""\n2. Who is Captain Jack sparrow")
+
+
+    
+    
+    # Get user input
+    user_prompt = st.text_input("Enter your text prompt:")
 
     # Get user input
     user_prompt = st.text_input("Enter your text prompt:")
