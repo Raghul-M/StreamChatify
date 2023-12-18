@@ -36,7 +36,7 @@ def main():
 
     
 
-    if st.button("Generate Chat"):
+    if st.button("Generate Chat 🚀"):
         with st.spinner(text='In progress'):
             chat = generate_prompt(user_prompt)
             time.sleep(3)  # Simulating processing time (remove in a real application)
