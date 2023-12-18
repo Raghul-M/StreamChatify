@@ -5,7 +5,7 @@ import google.generativeai as palm
 
 
 # Assuming 'palm' is the correct module name
-import google.generativeai as palm 
+
 palm.configure(api_key=st.secrets["PALM_API_KEY"])
 st.set_page_config(page_title="StreamChatify", page_icon="🤖")
 # Define the model (replace 'your_model_name' with the actual model name)
@@ -23,13 +23,13 @@ def generate_prompt(prompt):
 
 def main():
     st.title("StreamChatify : Chat App 🗯️")
-    user_input = st.text_area("","Example prompts:""\n""1. Write a two number addition program in Golang""\n2. Who is Captain Jack sparrow")
+    st.text_area("","Example prompts:""\n""1. Write a two number addition program in Golang""\n2. Who is Captain Jack sparrow")
 
 
     
     
-    # Get user input
-    user_prompt = st.text_input("Enter your text prompt:")
+  
+   
 
     # Get user input
     user_prompt = st.text_input("Enter your text prompt:")
