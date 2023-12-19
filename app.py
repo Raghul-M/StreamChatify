@@ -22,7 +22,7 @@ def generate_prompt(prompt):
     return completion.result
 
 def main():
-    st.title("StreamChatify : Chat App 🗯️")
+    st.title("StreamChatify : Your Personal Chat Partner 🗯️")
     st.text_area("","Example prompts:""\n""1. Write a two number addition program in Golang""\n2. Who is Captain Jack sparrow")
 
 
