@@ -4,7 +4,7 @@ import google.generativeai as palm
 
 # Assuming 'palm' is the correct module name
 
-palm.configure(api_key="")
+palm.configure(api_key = st.secrets["API_KEY"] )
 st.set_page_config(page_title="StreamChatify", page_icon="🤖")
 
 # Define the model (replace 'your_model_name' with the actual model name)
