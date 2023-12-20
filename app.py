@@ -24,7 +24,23 @@ def generate_prompt(prompt):
 def main():
     st.title("StreamChatify : Your Personal Chat Partner 🗯️")
     st.text_area("","Example prompts:""\n""1. Write a two number addition program in Golang""\n2. Who is Captain Jack sparrow")
+     
+    st.markdown(
+    """
+    <style>
+    .github-link {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
+# Display a button with a link to your GitHub repository in the top-right corner
+if st.button("GitHub Repo", key="github-button"):
+    st.markdown("[GitHub Repo](https://github.com/Raghul-M/StreamChatify)", className="github-link")
 
     
     
